@@ -1,0 +1,31 @@
+@import '@fontsource-variable/open-sans';
+@import '@fontsource-variable/playfair-display';
+@import '@fontsource/great-vibes';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-luxury-black text-white font-sans;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-luxury-gold to-luxury-gold-light bg-clip-text text-transparent;
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 20px rgba(229, 201, 123, 0.3);
+  }
+
+  .glow-gold-hover:hover {
+    box-shadow: 0 0 30px rgba(229, 201, 123, 0.5);
+  }
+}
