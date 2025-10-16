@@ -1187,33 +1187,41 @@ html {
 .glow-gold-hover:hover {
     box-shadow: 0 0 30px rgba(229, 201, 123, 0.5);
   }
+
 .hover\:border-luxury-gold\/40:hover{
   border-color: rgb(229 201 123 / 0.4);
 }
+
 .hover\:border-luxury-gold\/60:hover{
   border-color: rgb(229 201 123 / 0.6);
 }
+
 .hover\:bg-luxury-gold-dark:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(212 184 100 / var(--tw-bg-opacity, 1));
 }
+
 .hover\:text-luxury-gold:hover{
   --tw-text-opacity: 1;
   color: rgb(229 201 123 / var(--tw-text-opacity, 1));
 }
+
 .group:hover .group-hover\:translate-y-1{
   --tw-translate-y: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
 .group:hover .group-hover\:scale-110{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
 .group:hover .group-hover\:text-luxury-gold-light{
   --tw-text-opacity: 1;
   color: rgb(245 230 200 / var(--tw-text-opacity, 1));
 }
+
 @media (min-width: 768px){
 
   .md\:col-span-2{
@@ -1260,6 +1268,7 @@ html {
     line-height: 1.75rem;
   }
 }
+
 @media (min-width: 1024px){
 
   .lg\:grid-cols-3{
