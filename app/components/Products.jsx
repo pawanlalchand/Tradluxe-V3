@@ -1,7 +1,9 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+'use client';
+
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Wine, ChefHat, Utensils, Coffee, Sparkles, Package, Gift, ShoppingBag, Crown } from 'lucide-react';
+import Image from 'next/image';
 
 const Products = () => {
   const ref = useRef(null);
@@ -93,10 +95,11 @@ const Products = () => {
                 className="group relative bg-luxury-dark rounded-sm overflow-hidden border border-luxury-gold/20 hover:border-luxury-gold/60 transition-all duration-500 cursor-pointer glow-gold-hover"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-luxury-black/50 to-transparent"></div>
 

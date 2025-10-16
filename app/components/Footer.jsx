@@ -1,3 +1,5 @@
+'use client';
+
 import { MapPin, Mail, Phone, Linkedin, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
@@ -15,7 +17,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="font-script text-4xl text-luxury-gold mb-4">Tradluxe</div>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Singapore's premier wholesale trading company, connecting global suppliers and premium buyers with elegance and precision.
+              Singapore&apos;s premier wholesale trading company, connecting global suppliers and premium buyers with elegance and precision.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-luxury-gold transition-colors">

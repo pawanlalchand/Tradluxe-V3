@@ -4,7 +4,7 @@ import About from './components/About';
 import Products from './components/Products';
 import Footer from './components/Footer';
 
-function App() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-luxury-black">
       <Navbar />
@@ -17,5 +17,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

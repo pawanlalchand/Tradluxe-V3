@@ -1,7 +1,9 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+'use client';
+
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Award, Globe, Users, TrendingUp } from 'lucide-react';
+import Image from 'next/image';
 
 const About = () => {
   const ref = useRef(null);
@@ -35,13 +37,13 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
               <p>
-                Based in the heart of Singapore, Tradluxe stands as a beacon of excellence in the wholesale trading industry. We specialize in connecting discerning buyers with the world's finest suppliers of luxury goods.
+                Based in the heart of Singapore, Tradluxe stands as a beacon of excellence in the wholesale trading industry. We specialize in connecting discerning buyers with the world&apos;s finest suppliers of luxury goods.
               </p>
               <p>
                 Our curated portfolio spans premium wines, gourmet ingredients, exclusive beverages, and luxury tableware. Each partnership is carefully selected to ensure the highest standards of quality and authenticity.
               </p>
               <p>
-                With a commitment to precision, elegance, and unparalleled service, we've redefined what it means to trade in luxury. Our global network and local expertise create seamless experiences for partners worldwide.
+                With a commitment to precision, elegance, and unparalleled service, we&apos;ve redefined what it means to trade in luxury. Our global network and local expertise create seamless experiences for partners worldwide.
               </p>
             </div>
           </motion.div>
@@ -53,10 +55,11 @@ const About = () => {
             className="relative"
           >
             <div className="relative h-[400px] md:h-[500px] rounded-sm overflow-hidden glow-gold">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
                 alt="Singapore Skyline"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/60 to-transparent"></div>
             </div>
